@@ -1,0 +1,29 @@
+{
+  "name": "terbilang-ts",
+  "version": "1.0.0",
+  "description": "Convert Number Into Indonesian Words",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohmanhm/terbilang-ts.git"
+  },
+  "keywords": [
+    "indonesia",
+    "typescript",
+    "terbilang",
+    "bilangan",
+    "number",
+    "to",
+    "word"
+  ],
+  "author": "MH Rohman Masyhar <mhrohman@live.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rohmanhm/terbilang-ts/issues"
+  },
+  "homepage": "https://github.com/rohmanhm/terbilang-ts#readme",
+  "devDependencies": {
+    "typescript": "^2.9.2"
+  }
+}
