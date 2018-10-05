@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Convert Number Into Indonesian Words",
   "main": "./dist/index.js",
-  "typings": "./dist/index.d.ts",
+  "typings": "./index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rohmanhm/terbilang-ts.git"
@@ -23,7 +23,28 @@
     "url": "https://github.com/rohmanhm/terbilang-ts/issues"
   },
   "homepage": "https://github.com/rohmanhm/terbilang-ts#readme",
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && ava"
+  },
   "devDependencies": {
+    "ava": "^1.0.0-beta.8",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-standard": "^8.0.1",
     "typescript": "^2.9.2"
+  },
+  "ava": {
+    "files": [
+      "test.ts"
+    ],
+    "verbose": true,
+    "compileEnhancements": false,
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
   }
 }
