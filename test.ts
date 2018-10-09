@@ -8,6 +8,11 @@ convertMacro.title = (providedTitle, input, expected) => {
   return `Read ${input} as ${expected}`.trim()
 }
 
+test(convertMacro, '10', 'Sepuluh')
+test(convertMacro, 'notanumber', '')
+test(convertMacro, -1, 'Satu')
+test(convertMacro, -1000, 'Seribu')
+test(convertMacro, 1, 'Satu')
 test(convertMacro, 1000, 'Seribu')
 test(convertMacro, 11000, 'Sebelas Ribu')
 test(convertMacro, 21329, 'Dua Puluh Satu Ribu Tiga Ratus Dua Puluh Sembilan')

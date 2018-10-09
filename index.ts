@@ -19,7 +19,9 @@ class Terbilang {
     'Sepuluh',
     'Sebelas'
   ]
-  public Convert (value: number) {
+  public Convert (convertNumber: number) {
+    const value = Math.abs(Number(convertNumber))
+
     let word = ''
 
     /* 1 - 12 */
